@@ -11,7 +11,7 @@ const TaskApp = () => {
   
   const [todolists,setTodolists] = React.useState([]);
   const updatetodostage1 = (abc)=>{
-    setTodolists([...todolists,{id:uuidv4,value:abc,ischecked:false}])
+    setTodolists([...todolists,{id:uuidv4(),value:abc,ischecked:false}])
   }
   const delupate=(ids)=>{
     let todoa = todolists.filter(todol=>todol.id !== ids);
